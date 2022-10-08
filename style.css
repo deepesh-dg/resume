@@ -1,0 +1,149 @@
+:root {
+  --bs-dark-blue: rgb(45, 38, 119);
+  --bs-body-font-family: "Helvetica";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0rem;
+}
+
+.my-col-7 {
+  max-width: 70%;
+}
+
+.my-col-3 {
+  max-width: 30%;
+}
+
+.contentContainer {
+  width: 900px;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.profile {
+  background-color: rgba(var(--bs-secondary-rgb), 0.5);
+  border-radius: 0.5rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem;
+}
+
+.links {
+  background-color: var(--bs-dark-blue);
+  color: var(--bs-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0rem 0.5rem 0rem 0rem;
+}
+.links .link {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+.links .link i {
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  float: right;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--bs-warning);
+  border: 4px solid white;
+  margin-top: -0.5rem;
+  transform: translate(calc(100% - var(--bs-gutter-x)));
+}
+
+.mainInfo {
+  padding: 0.5rem 1rem;
+}
+.mainInfo > * {
+  margin-bottom: 1.5rem;
+}
+.mainInfo > *:last-child {
+  margin-bottom: 0rem;
+}
+.mainInfo h2 {
+  display: flex;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.mainInfo h2::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f649";
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.mainInfo ul {
+  margin-bottom: 0rem;
+}
+.mainInfo .list {
+  position: relative;
+  padding-left: 0.5rem;
+  list-style: none;
+}
+.mainInfo .list .list-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  margin-bottom: 0.375rem;
+}
+.mainInfo .list .list-item::before {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-family: "Font Awesome 6 Pro";
+  content: "\e1a1";
+  margin-right: 0.5rem;
+}
+.mainInfo .list .list-item .content {
+  width: 65%;
+}
+.mainInfo .list .list-item .content .header {
+  display: flex;
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+.mainInfo .list .list-item .content .body {
+  padding-left: 0.375rem;
+  opacity: 0.6;
+  font-size: 90%;
+  line-height: 1.3;
+}
+.mainInfo .list .list-item .content .body ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin-top: 0.375rem;
+}
+.mainInfo .list .list-item .duration {
+  width: 35%;
+  font-weight: 700;
+  text-align: right;
+}
+
+.extraInfo {
+  padding: 0.5rem 1rem;
+  background-color: rgba(var(--bs-secondary-rgb), 0.5);
+}/*# sourceMappingURL=style.css.map */
