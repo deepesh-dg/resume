@@ -22,6 +22,40 @@ p {
     margin-bottom: 0rem;
 }
 
+ul {
+    margin-bottom: 0rem;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+    // &::before {
+    //     font-family: "Font Awesome 6 Pro";
+    //     content: "\f649";
+    //     margin-right: 0.5rem;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     font-size: 1.5rem;
+    // }
+
+    &::after {
+        content: "";
+        background-color: var(--bs-secondary);
+        margin-left: 0.5rem;
+        height: 2px;
+        width: 15%;
+    }
+}
+
 .my-col-7 {
     max-width: 70%;
 }
@@ -35,23 +69,59 @@ p {
     margin: 1rem auto;
     // border: 1px solid rgba(var(--bs-secondary-rgb), 0.25);
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .profile {
-    background-color: rgba(var(--bs-secondary-rgb), 0.5);
-    border-radius: 0.5rem 0rem 0rem 0rem;
-    padding: 0.5rem 1rem;
+    background-color: rgba(var(--bs-secondary-rgb), 0.1);
+    padding: 1rem 1rem 0.5rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+
+    // > * {
+    //     width: 100%;
+    // }
+
+    .heading {
+        text-align: center;
+        margin-bottom: 1rem;
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        h6 {
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .bio {
+        text-align: justify;
+    }
 }
 
 .links {
     background-color: var(--bs-dark-blue);
     color: var(--bs-white);
     padding: 0.5rem 1rem;
-    border-radius: 0rem 0.5rem 0rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    > * {
+        width: 100%;
+    }
 
     .link {
         display: flex;
         margin-bottom: 0.25rem;
+
+        &:last-child {
+            margin-bottom: 0rem;
+        }
 
         i {
             margin-right: 0.5rem;
@@ -84,48 +154,25 @@ p {
         }
     }
 
-    h2 {
-        display: flex;
-        position: relative;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-size: 1.75rem;
-        margin-bottom: 0.5rem;
-
-        &::before {
-            font-family: "Font Awesome 6 Pro";
-            content: "\f649";
-            margin-right: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-        }
-    }
-
-    ul {
-        margin-bottom: 0rem;
-    }
-
     .list {
         position: relative;
         padding-left: 0.5rem;
         list-style: none;
 
-        .list-item {
+        &-item {
             position: relative;
             display: flex;
             flex-wrap: wrap;
-            padding-left: 1.5rem;
+            padding-left: 1.25rem;
             margin-bottom: 0.375rem;
 
             &::before {
                 position: absolute;
-                top: 0rem;
+                top: 0.125rem;
                 left: 0rem;
                 font-family: "Font Awesome 6 Pro";
                 content: "\e1a1";
-                margin-right: 0.5rem;
+                font-size: 80%;
             }
 
             .content {
@@ -169,5 +216,51 @@ p {
 
 .extraInfo {
     padding: 0.5rem 1rem;
-    background-color: rgba(var(--bs-secondary-rgb), 0.5);
+    background-color: rgba(var(--bs-secondary-rgb), 0.1);
+
+    > * {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+    }
+
+    .list {
+        list-style: none;
+        padding-left: 0rem;
+
+        &-item {
+            margin-bottom: 0.75rem;
+
+            &:last-child {
+                margin-bottom: 0rem;
+            }
+
+            .course {
+                font-weight: 600;
+            }
+            
+            .university {
+                font-size: 95%;
+                font-weight: 600;
+            }
+
+            .duration {
+                font-size: 90%;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .skills {
+        ul {
+            padding-left: 0rem;
+            list-style: none;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
 }
