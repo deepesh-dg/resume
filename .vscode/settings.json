@@ -1,4 +1,6 @@
 {
-    "liveServer.settings.port": 5501,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
 }
