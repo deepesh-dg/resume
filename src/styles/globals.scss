@@ -160,8 +160,6 @@ a.link {
 
         &-item {
             position: relative;
-            display: flex;
-            flex-wrap: wrap;
             padding-left: 1rem;
             margin-bottom: 0.25rem;
 
@@ -179,10 +177,20 @@ a.link {
             }
 
             .content {
-                width: 70%;
-
                 .header {
                     font-weight: 600;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .title {
+                        width: 70%;
+                    }
+
+                    .duration {
+                        width: 30%;
+                        font-weight: 700;
+                        text-align: right;
+                        text-transform: capitalize;
+                    }
                 }
 
                 .body {
@@ -197,13 +205,6 @@ a.link {
                         margin-top: 0.125rem;
                     }
                 }
-            }
-
-            .duration {
-                width: 30%;
-                font-weight: 700;
-                text-align: right;
-                text-transform: capitalize;
             }
         }
     }

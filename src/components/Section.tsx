@@ -12,8 +12,11 @@ const Section = ({ section }: { section: ISectionInfo }) => {
                     <li className="list-item" key={i}>
                         <div className="content">
                             <div className="header">
-                                <Link name={content.name} url={content.url} />
-                                {content.source && <>&nbsp;|&nbsp;{content.source}</>}
+                                <div className="title">
+                                    <Link name={content.name} url={content.url} />
+                                    {content.source && <>&nbsp;|&nbsp;{content.source}</>}
+                                </div>
+                                <div className="duration">{getDuration(content.from, content.to)}</div>
                             </div>
                             <div className="body">
                                 {content.description}
@@ -26,7 +29,6 @@ const Section = ({ section }: { section: ISectionInfo }) => {
                                 )}
                             </div>
                         </div>
-                        <div className="duration">{getDuration(content.from, content.to)}</div>
                     </li>
                 ))}
             </ul>
