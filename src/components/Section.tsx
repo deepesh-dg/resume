@@ -5,7 +5,7 @@ import Link from './Link';
 
 const Section = ({ section }: { section: ISectionInfo }) => {
     return (
-        <>
+        <div className="section">
             <h2>{section.title}</h2>
             <ul className="list">
                 {section.content.map((content, i) => (
@@ -30,7 +30,7 @@ const Section = ({ section }: { section: ISectionInfo }) => {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 };
 

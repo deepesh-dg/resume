@@ -22,20 +22,20 @@ export const resumeDetails: IResumeDetails = {
         {
             name: "Master's of Computer Application (Open Distance Learning)",
             institite: { name: 'Chandigarh University, Punjab' },
-            from: new Date('2022-01-01'),
-            to: new Date('2024-01-01'),
+            from: new Date('2022-07-01'),
+            to: new Date('2024-06-30'),
         },
         {
             name: "Bachelor's of Computer Application",
             institite: { name: 'RRBM University, Alwar' },
-            from: new Date('2016-01-01'),
-            to: new Date('2019-01-01'),
+            from: new Date('2016-08-01'),
+            to: new Date('2019-09-30'),
         },
         {
             name: 'Higher Secondary',
             institite: { name: 'RBSE Board, Rajasthan' },
-            from: new Date('2015-01-01'),
-            to: new Date('2016-01-01'),
+            from: new Date('2015-07-01'),
+            to: new Date('2016-06-30'),
         },
     ],
     skills: [
