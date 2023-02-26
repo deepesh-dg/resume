@@ -17,13 +17,6 @@ export interface ISocialLinks {
     npm?: string;
 }
 
-export interface IEducationInfo {
-    degreeName: string;
-    university: string;
-    from: Date;
-    to: Date;
-}
-
 export type ISkills = string[];
 
 export interface ISectionContent {
@@ -41,7 +34,7 @@ export interface ISectionInfo {
     content: ISectionContent[];
 }
 
-export interface ICertification {
+export interface Academics {
     name: string;
     institite: {
         name: string;
@@ -57,10 +50,10 @@ export interface IResumeDetails {
     personalInfo: IPersonalInfo;
     summary: ISummary;
     socialLinks: ISocialLinks;
-    educationInfo: IEducationInfo[];
+    educationInfo: Academics[];
     skills: ISkills;
     sectionInfo: ISectionInfo[];
-    certifications: ICertification[];
+    certifications: Academics[];
 }
 
 export default IResumeDetails;

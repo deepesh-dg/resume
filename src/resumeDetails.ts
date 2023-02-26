@@ -20,20 +20,20 @@ export const resumeDetails: IResumeDetails = {
     },
     educationInfo: [
         {
-            degreeName: "Master's of Computer Application (Open Distance Learning)",
-            university: 'Chandigarh University, Punjab',
+            name: "Master's of Computer Application (Open Distance Learning)",
+            institite: { name: 'Chandigarh University, Punjab' },
             from: new Date('2022-01-01'),
             to: new Date('2024-01-01'),
         },
         {
-            degreeName: "Bachelor's of Computer Application",
-            university: 'RRBM University, Alwar',
+            name: "Bachelor's of Computer Application",
+            institite: { name: 'RRBM University, Alwar' },
             from: new Date('2016-01-01'),
             to: new Date('2019-01-01'),
         },
         {
-            degreeName: 'Higher Secondary',
-            university: 'RBSE Board, Rajasthan',
+            name: 'Higher Secondary',
+            institite: { name: 'RBSE Board, Rajasthan' },
             from: new Date('2015-01-01'),
             to: new Date('2016-01-01'),
         },
@@ -58,7 +58,7 @@ export const resumeDetails: IResumeDetails = {
             title: 'projects',
             content: [
                 {
-                    name: 'store.deepeshdg.com',
+                    name: 'SuperMarket',
                     url: 'https://store.deepeshdg.com/',
                     source: 'E-commerce Website',
                     description:
@@ -69,8 +69,6 @@ export const resumeDetails: IResumeDetails = {
                         'Implemented a dynamic shopping cart system using React-Redux.',
                         'Implemented JWT authentication.',
                     ],
-                    // from: new Date('2023-01-01'),
-                    // to: new Date('2023-01-01'),
                 },
                 // {
                 //     name: 'NodeJS Developer',
@@ -131,7 +129,7 @@ export const resumeDetails: IResumeDetails = {
             title: 'freelancing and internships',
             content: [
                 {
-                    name: 'cleantax.deepeshdg.com',
+                    name: 'CleanTax',
                     url: 'https://cleantax.deepeshdg.com',
                     source: 'A Blog Website',
                     description:

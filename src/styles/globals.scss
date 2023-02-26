@@ -56,6 +56,17 @@ h2 {
     max-width: 30%;
 }
 
+a.link {
+    i {
+        font-size: 60%;
+        opacity: 0.9;
+        position: relative;
+        top: -0.25rem;
+        right: -0.125rem;
+        margin-right: 0.25rem;
+    }
+}
+
 .contentContainer {
     min-width: 950px;
     width: 950px;
